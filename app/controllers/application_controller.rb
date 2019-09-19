@@ -2,6 +2,7 @@ require 'sinatra/base'
 require 'pry'
 
 class App < Sinatra::Base
+  binding.pry
 
   set :views, Proc.new { File.join(root, "../views/") }
   
